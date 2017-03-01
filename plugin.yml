@@ -1,0 +1,17 @@
+name: ShowServerStatus
+main: maru.serverstat.Main
+author: maru
+version: "1.0.0"
+api: ["1.0.0"]
+
+permissions:
+ showserverstatus.*:
+  default: OP
+  children:
+   showserverstatus.commands.*:
+    default: OP
+    children:
+     showserverstatus.commands.serverinfo:
+      default: OP
+   showserverstatus.show:
+    default: OP
